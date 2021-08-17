@@ -6,7 +6,7 @@ class CountdownTimer {
       hours: document.querySelector('[data-value="hours"]'),
       mins: document.querySelector('[data-value="mins"]'),
       secs: document.querySelector('[data-value="secs"]'),
-      targetDate: new Date("Aug 18, 2021"),
+      targetDate: new Date("Dec 31, 2021"),
       selector: document.querySelector("#timer-1"),
     };
   }
@@ -38,7 +38,7 @@ class CountdownTimer {
   timeFinish(delta) {
     if (delta <= 0) {
       clearInterval(this.intervalId);
-      refs.selector.textContent = "Finish";
+      refs.selector.textContent = "Happy New Year!";
     }
   }
 }
